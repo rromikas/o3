@@ -1,0 +1,57 @@
+#navbar {
+    background: transparent;
+}
+
+#evalModule {
+    background: rgb(39, 39, 39, 0.6);
+}
+
+#evalContent {
+    position: relative;
+    height: 500px;
+}
+
+#evalForm {
+    position: absolute;
+    right: 50px;
+    top: 75px;
+}
+
+@media only screen and (max-width: 600px) {
+    #evalForm {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top: 150px;
+    }
+    #dialogText {
+        margin-left: 0px;
+        top: 0px;
+    }
+    #dialogText ul {
+        display: none;
+    }
+}
+
+#formSelect {
+    min-width: 330px;
+}
+
+#dialogText {
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+}
+
+#dialogText h3 {
+    padding-top: 10px;
+}
+
+#dialogText ul {
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+#dialogText ul li {
+    padding-top: 20px;
+}

@@ -1,0 +1,52 @@
+.diagramIllustrationWrapper {
+    position: relative;
+    height: 95vh;
+    margin-left: 200px;
+    background: url(/src/assets/Img/Diagram.svg);
+    background-size: cover;
+}
+
+.diagramIllustrationWrapper img {
+    min-height: 900px !important;
+}
+
+.diagramIllustrationWrapper .diagramText {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    width: 300px;
+    background: blue;
+    color: white;
+}
+
+.diagramIllustrationWrapper .diagramText ul {
+    list-style-type: none;
+}
+
+.diagramIllustrationWrapper .diagramText ul li {
+    padding-top: 10px;
+}
+
+.diagramIllustrationWrapper .diagramText ul li a {
+    color: white;
+}
+
+
+
+.diagramIllustrationWrapper .diagramTextSec1 {
+    position: absolute;
+    left: 75px;
+    top: 50px;
+}
+
+.diagramIllustrationWrapper .diagramTextSec2 {
+    position: absolute;
+    top: 33vh;
+    right: 20px;
+}
+
+.diagramIllustrationWrapper .diagramTextSec3 {
+    position: absolute;
+    top: 560px;
+    left: 75px;
+}

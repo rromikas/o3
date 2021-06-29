@@ -1,0 +1,55 @@
+.cmsList {
+    color: white;
+}
+
+.cmsList ul {
+    position: relative;
+    list-style-type: none;
+    margin-bottom: 40px;
+    left: -10px;
+}
+
+.cmsList ul li {
+    background: rgba(128, 128, 128, 0.001);
+    width: 350px;
+    height: 50px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(0px);
+    padding-left: 15px;
+}
+
+.cmsList ul li a {
+    color: white;
+    line-height: 50px;
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.cmsList ul li .cmsIcon {
+    position: relative;
+    top: 5px;
+    left: -3px;
+    color: #ff6277;
+    font-size: 20px;
+}
+
+#cmsButton {
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 45px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: transparent;
+    color: white;
+}
+
+#cmsButton:hover {
+    border: 1px solid rgb(226, 226, 226, 0.7);
+    background: rgb(204, 204, 204, 0.05); 
+}

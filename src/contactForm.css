@@ -1,0 +1,69 @@
+.contactFormText {
+  position: relative;
+  top: 0px;
+  color: white;
+  margin-left: 10%;
+}
+
+.contactFormText h2 {
+  font-size: 34px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.contactFormText ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contactFormText ul li {
+  padding-bottom: 20px;
+}
+
+.contactFormText ul li a {
+  color: white;
+}
+
+.contactFormText .contactFormIcon {
+  position: relative;
+  color: white;
+  margin-right: 10px;
+  font-size: 22px;
+  top: 5px;
+}
+
+#form {
+  position: relative;
+  top: 50px;
+  right: 0;
+}
+
+#formButton {
+  position: absolute;
+  right: 0px;
+  bottom: -75px;
+  padding: 15px 35px 15px 35px;
+  background: #2e2e36;
+}
+
+#formInput label {
+  padding-left: 20px !important;
+}
+
+#formInput {
+  background-image: none !important;
+  background: none !important;
+  background-color: none !important;
+  border-bottom-color: none !important;
+}
+
+#formInput:hover {
+  background-image: none !important;
+  background: none !important;
+  background-color: none !important;
+  border-bottom-color: none !important;
+}
+
+#formInput:hover {
+  border: none;
+}
