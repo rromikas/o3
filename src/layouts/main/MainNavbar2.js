@@ -26,6 +26,7 @@ import navConfig from './MenuConfig';
 
 import logoTop from '../../assets/Img/logo-top.png';
 import logoScrolled from '../../assets/Img/logo-scrolled.png';
+import { withStyles } from '@material-ui/styles';
 
 // ----------------------------------------------------------------------
 
@@ -66,6 +67,22 @@ const useStyles = styled((theme) => ({
     minWidth: 400
   }
 }));
+
+const StyledInput = withStyles({
+  root: {
+    '& .MuiInput-root:hover:before': {
+      borderBottom: '1px solid rgba(145, 158, 171, 0.56)'
+    }
+  }
+})(TextField);
+
+const StyledSelect = withStyles({
+  root: {
+    '& .MuiInput-root:hover:before': {
+      borderBottom: '1px solid rgba(145, 158, 171, 0.56)'
+    }
+  }
+})(Select);
 
 // ----------------------------------------------------------------------
 
@@ -158,21 +175,23 @@ export default function MainNavbar() {
                 </Grid>
                 <Grid container spacing={4} xs={10} sm={10} md={6} lg={6} id="evalForm">
                   <Grid item xs={12} sm={6} md={6} lg={5}>
-                    <TextField id="name" label="Namn" type="text" fullWidth variant="standard" />
+                    <StyledInput id="name" label="Namn" type="text" fullWidth variant="standard" />
                   </Grid>
                   <Grid item xs={12} sm={6} md={6} lg={5}>
-                    <TextField id="email" label="Email" type="email" fullWidth variant="standard" />
+                    <StyledInput id="email" label="Email" type="email" fullWidth variant="standard" />
                   </Grid>
                   <Grid item xs={12} sm={6} md={6} lg={5}>
-                    <TextField id="business" label="Företag" type="text" fullWidth variant="standard" />
+                    <StyledInput id="business" label="Företag" type="text" fullWidth variant="standard" />
                   </Grid>
                   <Grid item xs={12} sm={6} md={6} lg={5}>
-                    <TextField id="website" label="Hemsida" type="text" fullWidth variant="standard" />
+                    <StyledInput id="website" label="Hemsida" type="text" fullWidth variant="standard" />
                   </Grid>
                   <Grid item xs={12} sm={12} md={12} lg={12}>
-                    <FormControl variant="filled">
+                    <FormControl>
                       <InputLabel id="demo-simple-select-filled-label">Hur kan vi hjälpa till?</InputLabel>
-                      <Select
+                      <StyledSelect
+                        variant="standard"
+                        classes={{ nativeInput: 'p-0' }}
                         labelId="demo-simple-select-filled-label"
                         id="formSelect"
                         autoWidth
@@ -185,11 +204,11 @@ export default function MainNavbar() {
                         <MenuItem value="Google Ads">Google Ads</MenuItem>
                         <MenuItem value="CMS">CMS-utveckling</MenuItem>
                         <MenuItem value="Annat">Annat</MenuItem>
-                      </Select>
+                      </StyledSelect>
                     </FormControl>
                   </Grid>
                   <Grid item xs={12} sm={12} md={10} lg={10}>
-                    <TextField
+                    <StyledInput
                       id="message"
                       label="Meddelande"
                       type="text"
